@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <img src="./usama.jpg" alt="Usama Dev">
+      </div>
+      <div class="preloader-text">
+        <h2>Usama Dev</h2>
+        <p>Web Developer & Designer</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="loading-text">Loading Portfolio...</div>
+    </div>
+  </div>
+
+  <!-- Header/Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Usama Dev</div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="mode-toggle" aria-label="Toggle dark/light mode"></button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1>Hello, I am <span class="highlight">Usama</span></h1>
+      <div class="typewriter-container">
+        <span class="typewriter-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn primary">View Portfolio</a>
+        <a href="#contact" class="btn secondary">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="./usama.jpg" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="./usama.jpg" alt="About Me Photo">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>Hello! I'm <span class="highlight">Usama</span>, a passionate web developer with a knack for creating modern, responsive, and animated websites. I love turning ideas into reality and helping clients grow their online presence.</p>
+        <div class="skills">
+          <div class="skill-icon" title="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
+          <div class="skill-icon" title="CSS3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div>
+          <div class="skill-icon" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+          <div class="skill-icon" title="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">My Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=facearea&w=128&q=80" alt="Web Development"></div>
+          <h3>Web Development</h3>
+          <p>Modern, responsive websites built with the latest technologies to help your business stand out online.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=128&q=80" alt="UI/UX Design"></div>
+          <h3>UI/UX Design</h3>
+          <p>Clean, user-friendly interfaces and experiences that delight users and drive engagement.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=128&q=80" alt="SEO Optimization"></div>
+          <h3>SEO Optimization</h3>
+          <p>Boost your website's visibility and ranking with proven SEO strategies and best practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="app">App</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-category="web">
+          <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Burger Website">
+          <div class="portfolio-info">
+            <h3>Project One</h3>
+            <p>Burger Website</p>
+            <a href="https://burger-website-usamadev.vercel.app/" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="design">
+          <img src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-Commerce App">
+          <div class="portfolio-info">
+            <h3>Project Two</h3>
+            <p>E-Commerce App</p>
+            <a href="https://usama-dev-app.vercel.app/" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="app">
+          <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gym Website">
+          <div class="portfolio-info">
+            <h3>Project Three</h3>
+            <p>Gym Website</p>
+            <a href="https://gym-pro-website.vercel.app/" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="web">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Website">
+          <div class="portfolio-info">
+            <h3>Project Four</h3>
+            <p>Web Development</p>
+            <a href="https://usama-folio.vercel.app/" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Popup -->
+      <div id="portfolio-modal" class="portfolio-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-img" src="" alt="Project Preview">
+        <div class="modal-caption"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"><span>Next.js</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-content">
+        <div class="resume-left">
+          <h3>Experience</h3>
+          <ul>
+            <li><strong>Senior Web Developer</strong> - Freelance (202 - Present)</li>
+            <li><strong>Frontend Developer</strong> - Tech Company (2023 - 2025)</li>
+          </ul>
+          <h3>Education</h3>
+          <ul>
+            <li><strong>B.Sc. in Computer Science</strong> - Karachi University (2018 - 2021)</li>
+          </ul>
+        </div>
+        <div class="resume-right">
+          <a href="CV.docx" class="btn primary" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonials-slider">
+        <div class="testimonial-slide active">
+          <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Client 1" class="client-img">
+          <blockquote>"Amazing work! Delivered on time and exceeded expectations."</blockquote>
+          <span class="client-name">John Smith, CEO - TechCorp</span>
+        </div>
+        <div class="testimonial-slide">
+          <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Client 2" class="client-img">
+          <blockquote>"Very professional and creative. Highly recommended!"</blockquote>
+          <span class="client-name">Sarah Johnson, Designer - CreativeStudio</span>
+        </div>
+        <div class="testimonial-slide">
+          <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Client 3" class="client-img">
+          <blockquote>"Great communication and top-notch skills."</blockquote>
+          <span class="client-name">Mike Davis, Manager - DigitalAgency</span>
+        </div>
+        <button class="testimonial-prev">&#10094;</button>
+        <button class="testimonial-next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <form class="contact-form" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+      <div class="contact-socials">
+        <a href="https://www.linkedin.com/in/usama-muzammil-336542337?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B83jnjGmXT%2FSpAQOA%2FA4ICA%3D%3D" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
+        <a href="https://github.com/UsamaIT786/owsome-portfolio" aria-label="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Usama Dev</h3>
+        <p>Professional Web Developer & Designer</p>
+      </div>
+      <div class="footer-section">
+        <h4>Connect With Me</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/usama.muzammil.2025/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/usama-muzammil-336542337?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B83jnjGmXT%2FSpAQOA%2FA4ICA%3D%3D" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/UsamaIT786/owsome-portfolio" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Usama Dev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
