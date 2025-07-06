@@ -827,7 +827,7 @@ blockquote {
 /* Responsive for new sections */
 @media (max-width: 900px) {
   .portfolio-grid {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5rem;
     align-items: center;
   }
@@ -1110,14 +1110,14 @@ section {
   }
 
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     padding: 1rem;
     text-align: center;
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
 
